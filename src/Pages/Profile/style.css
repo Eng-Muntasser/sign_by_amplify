@@ -1,0 +1,16 @@
+.UserProfileMain{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+}
+.UserWelcoming{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #FFF;
+}

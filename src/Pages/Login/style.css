@@ -1,0 +1,147 @@
+.LoginMain{
+    min-height: 100vh;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('registerM.png');
+    background-color: rgba(30,41,59,1);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.FullWidthHeight{
+    display: flex;
+    flex: 1;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+.LoginCardContain{
+    background-color: rgba(226,232,240,1);
+    border-radius: .5rem;
+    height: 510px;
+    /* transition: all 0.3s ease-in-out; */
+    box-sizing:border-box;
+    border: none;
+}
+/* .LoginCardContain:hover{
+    transform: scale(1.2);
+    margin-top: 20px;
+} */
+.signinTaitleContain{
+    margin-top: 1em;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: baseline;
+    border-bottom: 1px solid;
+    border-color: rgba(30,41,59,1);
+}
+.signInIcon{
+    margin-right: 10px;
+    font-size: 2.3rem;
+    font-weight: bolder;
+}
+.signInTitle{
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: rgba(30,41,59,1);
+    margin-bottom: 0.2em;
+}
+.LoginFormContain{
+    margin-top: 1.5em !important;
+}
+.labelModifcation .ant-form-item-required{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(30,41,59,1);
+}
+.signInBtn{
+    position: relative !important;
+    right: 0;
+    left: 0;
+    bottom: -35px;
+    background-color: rgba(30,41,59,1) !important;
+    border-color: rgba(30,41,59,1) !important;
+    border-radius: 5px !important;
+    font-size: 1.3rem !important;
+    font-weight: bold !important;
+    height: 52px !important;
+}
+.NewUserBtn{
+    position: relative !important;
+    right: 0;
+    left: 0;
+    bottom: -25px;
+    background-color: rgba(30,41,59,1) !important;
+    border-color: rgba(30,41,59,1) !important;
+    border-radius: 5px !important;
+    font-size: 1.3rem !important;
+    font-weight: bold !important;
+    height: 52px !important;
+}
+.logInSpinner{
+    position: relative !important;
+    bottom: -10px;
+}
+@media only screen and (max-width:1024px){
+    .LoginMain{
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+    .LoginCardContain{
+        height: 560px;
+        position: relative !important;
+        top: 30px;
+    }
+}
+@media only screen and (max-width:768px){
+    .LoginMain{
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+    .LoginCardContain{
+        height: 560px;
+        position: relative !important;
+        top: -100px;
+    }
+    .labelModifcation .ant-input-lg{
+        height: 55px !important;
+    }
+    .labelModifcation .ant-input-password{
+        padding: 2px;
+    }
+    .labelModifcation .ant-input-password-icon{
+        margin-right: 5px;
+    }
+}
+@media only screen and (max-width:480px){
+    .LoginMain{
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+    .LoginCardContain{
+        height: 540px;
+        position: relative !important;
+        top: -30px;
+    }
+    .labelModifcation .ant-input-lg{
+        height: 55px !important;
+    }
+    .labelModifcation .ant-input-password{
+        padding: 2px;
+    }
+    .labelModifcation .ant-input-password-icon{
+        margin-right: 5px;
+    }
+}

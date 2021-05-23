@@ -1,0 +1,25 @@
+.regConfTiltleText{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgba(30,41,59,1);
+    margin-bottom: 0.2em;
+}
+.confRegistCardContain{
+    background-color: rgba(226,232,240,1);
+    border-radius: .5rem;
+    height: 300px;
+    box-sizing:border-box;
+    border: none;
+}
+.confRegistrationFormContain{
+    margin-top: 1em !important;
+}
+.confRegistrationFormContain .ant-form-item-label{
+    padding: 0 !important;
+
+}
+.confRegistrationFormContain .ant-form-item-required{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(30,41,59,1);
+}

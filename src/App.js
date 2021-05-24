@@ -1,5 +1,5 @@
-import React from 'react';
-import Amplify from 'aws-amplify';
+import React,{useEffect} from 'react';
+import Amplify, {Auth} from 'aws-amplify';
 import config from './config.json'; 
 import {
   BrowserRouter as Router,
@@ -37,7 +37,22 @@ function App(props) {
       </Switch>
     );
   }
-  console.log('asd5',localStorage.getItem('userTokenAmp')=== null);
+  //as a temp soultion check the token evrey refresh (first render for app) then it will be maneged by axios.
+  useEffect(()=>{
+    const sessionHandling = async() =>{
+      try{
+        const sessionResp = await Auth.currentSession();
+        if(sessionResp){
+          console.log(sessionResp);
+        }
+      }catch(err){
+        console.log('session',err);
+      }
+    }
+    if( localStorage.getItem('userTokenAmp') !== null){
+      sessionHandling();
+    }
+  },[])
   return (
     <Router>
       <div className="App">

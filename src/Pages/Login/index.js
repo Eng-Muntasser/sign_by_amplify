@@ -36,7 +36,7 @@ const Login = ({props,setSignInOutFlag}) =>{
             let password =values.password;
             const user = await Auth.signIn(email, password);
             if(user){
-                console.log(user.signInUserSession.accessToken.jwtToken);
+                // console.log(user.signInUserSession.accessToken.jwtToken);
                 successLogIN();
                 localStorage.setItem('userTokenAmp', user.signInUserSession.accessToken.jwtToken);
                 history.push('/');

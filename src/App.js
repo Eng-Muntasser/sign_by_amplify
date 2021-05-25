@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react';
-import Amplify, {Auth} from 'aws-amplify';
-import config from './config.json'; 
+import {Auth} from 'aws-amplify';
+// import config from './config.json'; 
+import AmplifyINit from './AmplifyInit';
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,14 +14,7 @@ import "antd/dist/antd.css";
 import './App.css';
 
 function App(props) {
-  Amplify.configure({
-    Auth: {
-      mandatorySignIn: true,
-      region: config.cognito.REGION,
-      userPoolId: config.cognito.USER_POOL_ID,
-      userPoolWebClientId: config.cognito.APP_CLIENT_ID
-    }
-  });
+  AmplifyINit();
   const GestRouts = () =>{
     return(
       <Switch>

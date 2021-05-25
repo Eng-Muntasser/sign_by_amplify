@@ -36,7 +36,8 @@ const Login = ({props,setSignInOutFlag}) =>{
             let password =values.password;
             const user = await Auth.signIn(email, password);
             if(user){
-                // console.log(user.signInUserSession.accessToken.jwtToken);
+                console.log('alphaUser',user);
+                localStorage.setItem('UserKeys',user);
                 successLogIN();
                 localStorage.setItem('userTokenAmp', user.signInUserSession.accessToken.jwtToken);
                 history.push('/');

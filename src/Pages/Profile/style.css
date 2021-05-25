@@ -2,15 +2,45 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    background-color: brown;
 }
 .UserWelcoming{
     font-size: 3rem;
     font-weight: bolder;
     color: #FFF;
+}
+.headerMain{
+    width: 90%;
+    position: relative;
+    top: 2em;
+}
+.tabelContainer{
+    width: 90%;
+}
+.tableInner{
+    width: 100%;
+    position: relative !important;
+    top: 5em ;
+}
+.AddDepBtn{
+    width: 90%;
+    position: relative;
+    top: 3em;
+}
+.departManagTiltle{
+    font-size: 3rem;
+    color: #FFF;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.actionMenu.ant-menu-root.ant-menu-vertical{
+    box-shadow: 0 15px 32px -4px rgba(0, 0, 0, 0.12),
+    0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+.selectActionDef{
+    cursor: pointer;
 }
